@@ -1,0 +1,40 @@
+{
+  "name": "kaze-syntax",
+  "displayName": "Kaze Syntax Highlighting",
+  "description": "Official TextMate syntax grammar for the Kaze programming language",
+  "version": "1.0.0",
+  "publisher": "sofuu-runtime",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sofuu-runtime/kaze-syntax"
+  },
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "kaze",
+        "aliases": [
+          "Kaze",
+          "kaze"
+        ],
+        "extensions": [
+          ".kaze"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "kaze",
+        "scopeName": "source.kaze",
+        "path": "./syntaxes/kaze.tmLanguage.json"
+      }
+    ]
+  }
+}
